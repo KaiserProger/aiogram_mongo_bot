@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  bot :
+    build:
+      context: .
+    restart: on-failure
+    stop_signal: SIGINT
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6.0.5
+    restart: on-failure
+    volumes:
+      - mongo-data:/data
+
+volumes:
+  mongo-data:

@@ -2,11 +2,11 @@ import asyncio
 import logging
 
 from aiogram import Bot, Dispatcher
-from config import Config
+from app.config import Config
 
-from db import MongoAdapter
-from handlers import register_handlers
-from middlewares import MongoMiddleware
+from app.db import MongoAdapter
+from app.handlers import register_handlers
+from app.middlewares import MongoMiddleware
 
 
 logger = logging.getLogger(__name__)

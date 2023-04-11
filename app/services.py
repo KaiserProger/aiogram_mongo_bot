@@ -3,7 +3,7 @@ from typing import TypedDict
 
 from motor.motor_asyncio import AsyncIOMotorCollection
 
-from dto import AggregationInputDto, AggregationOutputDto, DatetimeAggregationBuilder, GroupType
+from app.dto import AggregationInputDto, AggregationOutputDto, DatetimeAggregationBuilder, GroupType
 
 
 class AggregationOut(TypedDict):

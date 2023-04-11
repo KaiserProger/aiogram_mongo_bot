@@ -2,10 +2,10 @@ from aiogram import Dispatcher
 from aiogram.types import Message
 from orjson import loads, JSONDecodeError
 
-from db import MongoAdapter
-from dto import AggregationInputDto
-from exceptions import invalid_json
-from services import PaymentAggregationService
+from app.db import MongoAdapter
+from app.dto import AggregationInputDto
+from app.exceptions import invalid_json
+from app.services import PaymentAggregationService
 
 
 async def echo(message: Message):

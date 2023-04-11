@@ -1,6 +1,6 @@
 from aiogram.dispatcher.middlewares import LifetimeControllerMiddleware
 
-from db import MongoAdapter
+from app.db import MongoAdapter
 
 
 class MongoMiddleware(LifetimeControllerMiddleware):
